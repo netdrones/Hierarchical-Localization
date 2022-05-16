@@ -1,0 +1,25 @@
+name: hloc
+channels:
+  - pytorch
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - python=3.8
+  - tqdm
+  - scipy
+  - numpy
+  - pandas
+  - pytorch
+  - matplotlib
+  - torchvision
+  - scikit-learn
+  - pip
+  - pip:
+    - h5py
+    - gdown
+    - kornia
+    - plotly
+    - Pillow
+    - pycolmap
+    - opencv-python
