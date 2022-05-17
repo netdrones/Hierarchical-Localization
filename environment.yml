@@ -22,4 +22,5 @@ dependencies:
     - plotly
     - Pillow
     - pycolmap
+    - notebook
     - opencv-python
