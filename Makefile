@@ -16,8 +16,10 @@ pip:
 	python -m pip install e .
 
 install-jupyter:
+	$(CONDA_ACTIVATE) $(ENV_NAME)
 	jupyter notebook --generate-config
 	echo "c = get_config()" >> ~/.jupyter/jupyter_notebook_config.py
+	echo "c.NotebookApp.ip = '*'" >> ~/.jupyter/jupyter_notebook_config.py
 	echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py
 	echo "c.NotebookApp.port = 5000" >> ~/.jupyter/jupyter_notebook_config.py
 
